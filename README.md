@@ -27,7 +27,7 @@
 
 # Просмотр
 
-Просмотреть сайт можно по данной ссылке https://semenov-daniil.github.io/meetanator-design-v1/
+Просмотреть сайт можно по данной ссылке [https://semenov-daniil.github.io/meetanator-design-v1/](https://semenov-daniil.github.io/meetanator-design-1v/)
 
 ***
 
