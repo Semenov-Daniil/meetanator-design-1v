@@ -1,0 +1,11 @@
+/* 
+    СТИЛИ FOOTER
+    АВТОР - СЕМЕНОВ ДАНИИЛ
+*/
+
+.footer {
+    border-top: 1.5px solid var(--color-second);
+
+    font-size: 15px;
+    color: var(--color-second);
+}

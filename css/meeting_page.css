@@ -1,0 +1,28 @@
+/* 
+    СТИЛИ СТРАНИЦ ВСТРЕЧИ
+    АВТОР - СЕМЕНОВ ДАНИИЛ
+*/
+
+.title_meet_page {
+    font-size: 25px;
+    font-family: var(--font-family-os-b);
+}
+
+.info_message {
+    font-size: 15px;
+    color: var(--color-system);
+
+    background-color: var(--color-second);
+
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.form_file {
+    font-size: 15px;
+}
+
+.main_meeting_lider {
+    background-image: url(./../images/meeting_slogan.jpg);
+}

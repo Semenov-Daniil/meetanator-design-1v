@@ -1,0 +1,476 @@
+/* 
+    ОБЩИЕ СТИЛИ
+    АВТОР - СЕМЕНОВ ДАНИИЛ
+*/
+
+/* ПОДКЛЮЧЕНИЕ ШРИФТОВ */
+@font-face {
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    src: url('./../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    font-weight: 700;
+    src: url('./../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    font-weight: 600;
+    src: url('./../fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "BebasNeue-Regular";
+    font-weight: 600;
+    src: url('./../fonts/BebasNeue-Regular.ttf');
+}
+
+:root {
+    --color-system: #ffffff;
+    --color-grey-l: #F6F6F6;
+    --color-grey-b: #9e9e9e;
+    --color-main: #0079FF;
+    --color-second: #00518B;
+    --color-red: #FF0000;
+    --color-tree: #C8E4FF;
+    --color-fourth: #84c3ff;
+    --color-succ: #B8EBA4;
+    --color-succ-b: #8be767;
+    --color-danger: #EDCBCB;
+    --color-danger-b: #ff8484;
+
+    --font-family-os-r: "OpenSans-Regular";
+    --font-family-os-b: "OpenSans-Bold";
+    --font-family-os-sb: "OpenSans-SemiBold";
+    --font-family-bn-r: "BebasNeue-Regular"
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-family-bn-r);
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+    position: relative;
+
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 10px;
+    color: #000;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    display: block;
+
+    white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+
+    border: none;
+
+    background-color: transparent;
+
+    white-space: nowrap;
+}
+
+main {
+    flex: 1;
+}
+
+/* СТИЛИ FLEX */
+.fd-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-r {
+    display: flex;
+    flex-direction: row;
+}
+
+.fw-w {
+    flex-wrap: wrap;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+.g-40 {
+    gap: 40px;
+}
+
+/* СТИЛИ PADDING && MARGIN */
+.p-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-0-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.m-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* СТИЛИ КНОПОК */
+.btn {
+    border: 1.5px solid transparent;
+    border-radius: 5px;
+
+    color: var(--color-system);
+    font-size: 15px;
+
+    background-color: transparent;
+
+    padding: 5px 20px;
+
+    width: fit-content;
+}
+
+.btn_main {
+    background-color: var(--color-main);
+
+    border-color: var(--color-main);
+}
+
+.btn_main:hover {
+    background-color: transparent;
+
+    color: var(--color-main);
+}
+
+.btn_sec {
+    background-color: var(--color-red);
+
+    border-color: var(--color-red);
+}
+
+.btn_sec:hover {
+    background-color: transparent;
+
+    color: var(--color-red);
+}
+
+/* СТИЛИ LINK */
+.link {
+    color: var(--color-main);
+    font-size: 15px;
+}
+
+.link:hover {
+    color: var(--color-second);
+}
+
+/* СТИЛИ VIDEO */
+video {
+    width: 100%;
+}
+
+/* STYLE FORM AND INPUT TEXT */
+form {
+    font-size: 18px;
+}
+
+input, 
+textarea {
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 1.5px solid #000000;
+
+    font-size: 15px;
+
+    padding: 10px 10px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+textarea {
+    max-width: 100%;
+    min-height: fit-content;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 70px;
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: var(--color-red);
+}
+
+input:invalid~label,
+textarea:invalid~label {
+    color: var(--color-red);
+}
+
+input:valid,
+textarea:valid {
+    border-color: #008000;
+}
+
+input:valid~label,
+textarea:valid~label {
+    color: #008000;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-main);
+}
+
+input:focus~label,
+textarea:focus~label {
+    color: var(--color-main);
+}
+
+/* ДОПОЛНИТЕЛЬНЫЕ СТИЛИ */
+.container_hf {
+    margin: 0 120px;
+    padding: 20px 80px;
+
+    height: fit-content;
+}
+
+.container_meeting {
+    margin: 50px 250px;
+    padding: 30px 50px;
+
+    border-radius: 5px;
+
+    background-color: var(--color-system);
+
+    overflow: hidden;
+}
+
+.t-c {
+    color: var(--color-second);
+    font-size: 18px;
+}
+
+.container_main {
+    gap: 100px;
+
+    padding: 50px 0;
+}
+
+.container_main section {
+    width: 100%;
+}
+
+/* СТИЛИ СПИСКА */
+.info_list {
+    border-bottom: 2px solid var(--color-second);
+}
+
+.info_item {
+    padding: 10px 0px;
+}
+
+.info_item_title {
+    font-family: var(--font-family-os-sb);
+    font-size: 15px;
+    color: var(--color-second);
+}
+
+.info_item_text {
+    font-size: 15px;
+    text-overflow: ellipsis;
+}
+
+/* STYLE TABLE */
+table {
+    border-collapse: collapse;
+}
+
+.meet_wrapp {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+    font-size: 18px;
+}
+
+.first-col {
+    min-width: 200px;
+
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    z-index: 100;
+
+    background-color: var(--color-system);
+}
+
+.name-col {
+    white-space: nowrap;
+
+    background-color: var(--color-tree);
+
+    border: 3px solid var(--color-system);
+    border-left: none;
+
+
+    padding: 10px;
+}
+
+.table-head-cell {
+    padding: 5px;
+
+    background-color: var(--color-grey-l);
+
+    border: 3px solid var(--color-system);
+}
+
+.table-text-month,
+.table-text-day-week,
+.table-text-time {
+    font-family: var(--font-family-os-r);
+    text-transform: uppercase;
+    font-size: 12px;
+
+    min-width: fit-content;
+}
+
+.table-text-day {
+    font-family: var(--font-family-os-sb);
+    font-size: 20px;
+}
+
+.table-col {
+    padding: 5px;
+
+    border: 3px solid var(--color-system);
+
+    text-align: center;
+}
+
+.table-success-cell {
+    background-color: var(--color-succ);
+
+    text-align: center;
+}
+
+.table-danger-cell {
+    background-color: var(--color-danger);
+
+    text-align: center;
+}
+
+.table-input-cell {
+    background-color: var(--color-tree);
+
+    text-align: center;
+
+    height: 1px;
+}
+
+table tbody tr:hover {
+    color: var(--color-main);
+}
+
+.leader-line td {
+    border-bottom-width: 20px;
+    border-top-width: 20px;
+}
+
+.table-input-cell {
+    position: relative;
+}
+
+.table-input-cell input[type="checkbox"] {
+    position: relative;
+    z-index: 10;
+}
+
+.table-input-cell input[type="checkbox"]~label {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.table-input-cell input[type="checkbox"]:checked~label {
+    background-color: var(--color-succ);
+}
+
+.table-max-cell {
+    font-size: 20px;
+    background-color: var(--color-succ);
+}
+
+.delet {
+    fill: #000000;
+}
+
+.delet:hover {
+    fill: var(--color-red);
+}
+
+.name-col input[type="text"] {
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* АНИМАЦИЯ */

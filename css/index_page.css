@@ -1,0 +1,128 @@
+/* 
+    СТИЛИ ГЛАВНОЙ СТРАНИЦЫ
+    АВТОР - СЕМЕНОВ ДАНИИЛ
+*/
+
+/* СТИЛИ MAIN */
+.cont-inc:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+/* СТИЛИ SECTION  */
+
+.title_section {
+    width: 100%;
+
+    padding: 10px 0;
+    margin-bottom: 40px;
+
+    font-size: 25px;
+    color: var(--color-second);
+}
+
+.title_b-b {
+    border-bottom: 2px solid var(--color-second);
+}
+
+.bg-g {
+    background-color: var(--color-grey-l);
+}
+
+.section_container {
+    padding: 30px 300px;
+}
+
+/* СТИЛИ SECTION WELCOME */
+.slogan_wrapp {
+    padding: 20px;
+}
+
+.slogan {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slogan_wrapp,
+.img_welcome {
+    flex: 1;
+    min-width: 500px;
+}
+
+.img_welcome img {
+    width: 100%;
+    height: auto;
+}
+
+/* СТИЛИ SECTION ABOUT */
+.about_item {
+    flex: 1;
+}
+
+.about_item_title {
+    padding: 5px 10px;
+
+    color: var(--color-second);
+    font-size: 18px;
+
+    border-bottom: 1.5px solid var(--color-second);
+
+    white-space: nowrap;
+}
+
+.about_item_text {
+    padding: 5px 0;
+
+    text-align: center;
+    font-size: 15px;
+}
+
+/* СТИЛИ SYSTEM */
+.video_wrapp {
+    width: 100%;
+}
+
+/* СТИЛИ CREATE MEET */
+.in-t-wrapp {
+    gap: 5px;
+
+    flex-direction: column-reverse;
+}
+
+
+
+.date_in_item {
+    padding: 20px 40px 20px 0;
+
+    width: fit-content;
+}
+
+.in-d-br {
+    border-top: 1px solid #000000;
+}
+
+.in-n-interval {
+    align-items: flex-end;
+}
+
+.btn_close {
+    align-self: flex-end;
+}
+
+.close {
+    fill: var(--color-grey-b);
+    transform: rotate(45deg);
+}
+
+.close:hover {
+    fill: var(--color-red);
+}
+
+.reg_wrapp {
+    display: none;
+}
+
+.in-c-reg-wrapp .in-c-reg:checked ~ .reg_wrapp {
+    display: block;
+}
+

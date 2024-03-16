@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetanator - Просмотр встречи</title>
+    <link rel="stylesheet" href="./../css/index.css">
+</head>
+<body>
+    <header class="header container_hf ai-c">
+        <nav class="header_nav fd-r ai-c fw-w g-20">
+            <div class="logo_wrapp">
+                <a class="logo" href="./../index.html">Meetanator</a>
+            </div>
+            <ul class="nav_centr fd-r g-40 fw-w jc-c">
+                <li><a href="./../index.html#about">О нас</a></li>
+                <li><a href="./../index.html#system">О системе</a></li>
+            </ul>
+            <ul class="fd-r ai-c g-40 fw-w jc-c">
+                <li><a href="./profile.html" class="link">Личный кабинет</a></li>
+                <li><a class="btn btn_main" href="./../index.html#create_meeting">Создать встречу</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_meeting_lider fd-c">
+        <section class="container_meeting fd-c g-40">
+            <div class="section_info_meet fd-c g-20">
+                <div class="title_meet_page">
+                    <h1>Просмотр встречи</h1>
+                </div>
+                <ul class="info_list fd-c g-10">
+                    <li class="info_item fd-c g-10">
+                        <div class="info_item_title">
+                            <h2>Название встречи:</h2>
+                        </div>
+                        <div class="info_item_text">
+                            <p>Встреча web2023</p>
+                        </div>
+                    </li>
+                    <li class="info_item fd-c g-10">
+                        <div class="info_item_title">
+                            <h2>Лидер встречи:</h2>
+                        </div>
+                        <div class="info_item_text">
+                            <p>Семенов Даниил</p>
+                        </div>
+                    </li>
+                    <li class="info_item fd-c g-10">
+                        <div class="info_item_title">
+                            <h2>Описание встречи:</h2>
+                        </div>
+                        <div class="info_item_text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, incidunt dicta accusamus tempore alias sapiente voluptatum quos quisquam ducimus sequi sed id ad? Facere porro, ab iste laborum dicta ducimus?</p>
+                        </div>
+                    </li>
+                    <li class="info_item fd-c g-10">
+                        <div class="info_item_title">
+                            <h2>Дополнительная информация о встрече:</h2>
+                        </div>
+                        <div class="info_item_text fd-c g-10">
+                            <a href="./../text/konfidencialnost.txt" class="link">konfidencialnost.txt</a>
+                            <a href="./../text/soglashenie.txt" class="link">soglashenie.txt</a>
+                        </div>
+                    </li>
+                    <li class="info_item fd-c g-10">
+                        <div class="info_item_title">
+                            <h2>Присоединиться к встрече</h2>
+                        </div>
+                        <form action="./meetingParticipant.html" class="fd-c g-20">
+                            <div class="in-t-wrapp fd-c">
+                                <input type="email" id="email_auth" placeholder="Введите Ваш логин (или e-mail лидера встречи)" required>
+                                <label for="email_auth">Логин (или e-mail лидера встречи)</label>
+                            </div>
+                            <div class="in-t-wrapp fd-c">
+                                <input type="password" id="password_auth" placeholder="Введите Ваш пароль">
+                                <label for="password_auth">Пароль (для дальнейшего изменения интервалов)</label>
+                            </div>
+                            <a href="./meetingParticipant.html" class="btn btn_main">Войти</a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="section_view_meet fd-c g-20">
+                <div class="title_meet_page">
+                    <h1>Встреча</h1>
+                </div>
+                <div class="meet_wrapp">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="first-col"></th>
+                                <th class="table-head-cell" colspan="3">
+                                    <div class="table-head-text fd-c">
+                                        <div class="table-text-month">
+                                            <strong>ДЕК</strong>
+                                        </div>
+                                        <div class="table-text-day">
+                                            <strong>23</strong>
+                                        </div>
+                                        <div class="table-text-day-week">
+                                            <strong>СБ</strong>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="table-head-cell" colspan="3">
+                                    <div class="table-head-text fd-c">
+                                        <div class="table-text-month">
+                                            <strong>ДЕК</strong>
+                                        </div>
+                                        <div class="table-text-day">
+                                            <strong>23</strong>
+                                        </div>
+                                        <div class="table-text-day-week">
+                                            <strong>СБ</strong>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="table-head-cell" colspan="3">
+                                    <div class="table-head-text fd-c">
+                                        <div class="table-text-month">
+                                            <strong>ДЕК</strong>
+                                        </div>
+                                        <div class="table-text-day">
+                                            <strong>23</strong>
+                                        </div>
+                                        <div class="table-text-day-week">
+                                            <strong>СБ</strong>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="table-head-cell" colspan="3">
+                                    <div class="table-head-text fd-c">
+                                        <div class="table-text-month">
+                                            <strong>ДЕК</strong>
+                                        </div>
+                                        <div class="table-text-day">
+                                            <strong>23</strong>
+                                        </div>
+                                        <div class="table-text-day-week">
+                                            <strong>СБ</strong>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="table-head-cell" colspan="3">
+                                    <div class="table-head-text fd-c">
+                                        <div class="table-text-month">
+                                            <strong>ДЕК</strong>
+                                        </div>
+                                        <div class="table-text-day">
+                                            <strong>23</strong>
+                                        </div>
+                                        <div class="table-text-day-week">
+                                            <strong>СБ</strong>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="first-col"></th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                                <th class="table-head-cell">
+                                    <div class="table-text-time">
+                                        15:00-17:00
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="leader-line">
+                                <td class="first-col name-col">
+                                    <div>Семенов Даниил (лидер)</div>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-col name-col">
+                                    <div class="fd-r g-10 jc-sb">
+                                        <div>Василий Васильевич</div>
+                                    </div>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-col name-col">
+                                    <div class="fd-r g-10 jc-sb">
+                                        <div>Иванов Иван</div>
+                                    </div>
+                                </td>
+                                <td class="table-col table-danger-cell">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1036 0.989549C1.71307 0.599024 1.07991 0.599024 0.689381 0.989549C0.298857 1.38007 0.298857 2.01324 0.689381 2.40376L5.28558 6.99996L0.689378 11.5962C0.298853 11.9867 0.298853 12.6199 0.689378 13.0104C1.0799 13.4009 1.71307 13.4009 2.10359 13.0104L6.69979 8.41417L11.296 13.0104C11.6865 13.4009 12.3197 13.4009 12.7102 13.0104C13.1007 12.6198 13.1007 11.9867 12.7102 11.5962L8.11401 6.99996L12.7102 2.40378C13.1007 2.01325 13.1007 1.38009 12.7102 0.989562C12.3197 0.599038 11.6865 0.599037 11.296 0.989562L6.69979 5.58575L2.1036 0.989549Z" fill="#FF0000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-danger-cell">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1036 0.989549C1.71307 0.599024 1.07991 0.599024 0.689381 0.989549C0.298857 1.38007 0.298857 2.01324 0.689381 2.40376L5.28558 6.99996L0.689378 11.5962C0.298853 11.9867 0.298853 12.6199 0.689378 13.0104C1.0799 13.4009 1.71307 13.4009 2.10359 13.0104L6.69979 8.41417L11.296 13.0104C11.6865 13.4009 12.3197 13.4009 12.7102 13.0104C13.1007 12.6198 13.1007 11.9867 12.7102 11.5962L8.11401 6.99996L12.7102 2.40378C13.1007 2.01325 13.1007 1.38009 12.7102 0.989562C12.3197 0.599038 11.6865 0.599037 11.296 0.989562L6.69979 5.58575L2.1036 0.989549Z" fill="#FF0000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-danger-cell">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1036 0.989549C1.71307 0.599024 1.07991 0.599024 0.689381 0.989549C0.298857 1.38007 0.298857 2.01324 0.689381 2.40376L5.28558 6.99996L0.689378 11.5962C0.298853 11.9867 0.298853 12.6199 0.689378 13.0104C1.0799 13.4009 1.71307 13.4009 2.10359 13.0104L6.69979 8.41417L11.296 13.0104C11.6865 13.4009 12.3197 13.4009 12.7102 13.0104C13.1007 12.6198 13.1007 11.9867 12.7102 11.5962L8.11401 6.99996L12.7102 2.40378C13.1007 2.01325 13.1007 1.38009 12.7102 0.989562C12.3197 0.599038 11.6865 0.599037 11.296 0.989562L6.69979 5.58575L2.1036 0.989549Z" fill="#FF0000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-danger-cell">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.1036 0.989549C1.71307 0.599024 1.07991 0.599024 0.689381 0.989549C0.298857 1.38007 0.298857 2.01324 0.689381 2.40376L5.28558 6.99996L0.689378 11.5962C0.298853 11.9867 0.298853 12.6199 0.689378 13.0104C1.0799 13.4009 1.71307 13.4009 2.10359 13.0104L6.69979 8.41417L11.296 13.0104C11.6865 13.4009 12.3197 13.4009 12.7102 13.0104C13.1007 12.6198 13.1007 11.9867 12.7102 11.5962L8.11401 6.99996L12.7102 2.40378C13.1007 2.01325 13.1007 1.38009 12.7102 0.989562C12.3197 0.599038 11.6865 0.599037 11.296 0.989562L6.69979 5.58575L2.1036 0.989549Z" fill="#FF0000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                                <td class="table-col table-success-cell">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9931 0.792893L6.7002 9.08579L2.4073 4.79289C2.01678 4.40237 1.38361 4.40237 0.993089 4.79289C0.602564 5.18342 0.602564 5.81658 0.993089 6.20711L5.99309 11.2071C6.38361 11.5976 7.01678 11.5976 7.4073 11.2071C7.40758 11.2068 7.40786 11.2066 7.40813 11.2063L16.4073 2.20711C16.7978 1.81658 16.7978 1.18342 16.4073 0.792893C16.0168 0.402369 15.3836 0.402369 14.9931 0.792893Z" fill="#008000"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="first-col"></td>
+                                <td class="table-col table-head-cell">
+                                    4
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    1
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    4
+                                </td>
+                                <td class="table-col table-head-cell table-max-cell">
+                                    6
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    5
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    3
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    3
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    1
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                                <td class="table-col table-head-cell">
+                                    2
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container_hf fd-c ai-c g-20">
+        <div class="logo_wrapp">
+            <a class="logo" href="./../index.html">Meetanator</a>
+        </div>
+        <ul class="fd-c g-10">
+            <li><a href="./../text/konfidencialnost.txt" download class="link">Политика конфиденцильности</a></li>
+            <li><a href="./../text/soglashenie.txt" download class="link">Пользовательское соглашение</a></li>
+        </ul>
+        &copy;Meetanator
+    </footer>
+</body>
+</html>

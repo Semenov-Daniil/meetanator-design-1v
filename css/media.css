@@ -1,0 +1,49 @@
+/* 
+    MEDIA ЗАПРОСЫ
+    АТВРО - СЕМЕНОВ ДВНИИЛ
+*/
+
+@media only screen and (max-width: 1200px) {
+    .container_hf {
+        margin: 0 80px;
+        padding: 20px 40px;
+    }
+
+    .header_nav {
+        justify-content: space-around;
+    }
+
+    .section_container {
+        padding: 20px 200px;
+    }
+
+    .container_meeting {
+        margin: 50px 100px;
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container_hf {
+        margin: 0 40px;
+        padding: 10px 20px;
+    }
+
+    .header_nav {
+        justify-content: space-around;
+    }
+
+    .slogan_wrapp, 
+    .img_welcome {
+        min-width: 100%;
+    }
+
+    .section_container {
+        padding: 10px 80px;
+    }
+
+    .container_meeting {
+        margin: 50px 50px;
+        padding: 10px 20px;
+    }
+}

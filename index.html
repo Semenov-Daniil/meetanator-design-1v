@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetanator - Главная</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="header container_hf ai-c">
+        <nav class="header_nav fd-r ai-c fw-w g-20">
+            <div class="logo_wrapp">
+                <a class="logo" href="./index.html">Meetanator</a>
+            </div>
+            <ul class="nav_centr fd-r g-40 fw-w jc-c">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#system">О системе</a></li>
+            </ul>
+            <ul class="fd-r ai-c g-40 fw-w jc-c">
+                <li><a href="./html/profile.html" class="link">Личный кабинет</a></li>
+                <li><a class="btn btn_main" href="#create_meeting">Создать встречу</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_index container_main fd-c">
+        <section class="section_welcome fd-r jc-sb fw-w ai-c">
+            <div class="slogan_wrapp fd-c ai-c jc-c g-20">
+                <div class="logo_wrapp">
+                    <a class="logo" href="./index.html">Meetanator</a>
+                </div>
+                <span class="slogan">Бесплатный планировщик для ваших встреч</span>
+                <a href="#create_meeting" class="btn btn_main">Создать встречу</a>
+            </div>
+            <div class="img_welcome cont-inc">
+                <img src="./images/meeting_slogan.jpg" alt="Welcome images">
+            </div>
+        </section>
+        <section class="section_container bg-g fd-c ai-c" id="about">
+            <div class="title_section fd-c ai-c">
+                <h1>О нас</h1>
+            </div>
+            <ul class="about_list fd-r fw-w g-40">
+                <li class="about_item fd-c g-10 cont-inc">
+                    <div class="about_item_title fd-c ai-c">
+                        <h2> &gt; 4</h2>
+                    </div>
+                    <div class="about_item_text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolore officiis ullam temporibus minus nam dolorum expedita. Laboriosam, aut, officiis commodi tempore cum dolore fuga provident fugit incidunt amet ut?</p>
+                    </div>
+                </li>
+                <li class="about_item fd-c cont-inc">
+                    <div class="about_item_title fd-c ai-c">
+                        <h2>146%</h2>
+                    </div>
+                    <div class="about_item_text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolore officiis ullam temporibus minus nam dolorum expedita. Laboriosam, aut, officiis commodi tempore cum dolore fuga provident fugit incidunt amet ut?</p>
+                    </div>
+                </li>
+                <li class="about_item fd-c cont-inc">
+                    <div class="about_item_title fd-c ai-c">
+                        <h2> &gt; 4</h2>
+                    </div>
+                    <div class="about_item_text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolore officiis ullam temporibus minus nam dolorum expedita. Laboriosam, aut, officiis commodi tempore cum dolore fuga provident fugit incidunt amet ut?</p>
+                    </div>
+                </li>
+                <li class="about_item fd-c cont-inc">
+                    <div class="about_item_title fd-c ai-c">
+                        <h2> &gt; 100 млн. ₽</h2>
+                    </div>
+                    <div class="about_item_text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolore officiis ullam temporibus minus nam dolorum expedita. Laboriosam, aut, officiis commodi tempore cum dolore fuga provident fugit incidunt amet ut?</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section_container fd-c" id="system">
+            <div class="title_section fd-c ai-c">
+                <h1>О системе</h1>
+            </div>
+            <div class="video_wrapp cont-inc">
+                <video src="./video/about.mp4"></video>
+            </div>
+        </section>
+        <section class="section_container fd-c bg-g" id="create_meeting">
+            <div class="title_section title_b-b fd-c ai-c">
+                <h1>Создать встречу</h1>
+            </div>
+            <form action="./html/meetingLeader.html" class="fd-c g-20">
+                <div class="in-t-wrapp fd-c">
+                    <input type="text" id="title_meet" placeholder="Введите название встречи" required pattern="^[А-Яа-яёЁ\s\d]+$" title="Только кирилица, пробелы и цифры">
+                    <label for="title_meet">Название встречи</label>
+                </div>
+                <div class="in-t-wrapp fd-c">
+                    <textarea id="desc_meet" rows="1" placeholder="Введите описание встречи"></textarea>
+                    <label for="desc_meet">Описание встречи</label>
+                </div>
+                <div class="in-t-wrapp fd-c">
+                    <input type="email" id="email_user_meet" placeholder="Введите Ваш e-mail" required>
+                    <label for="email_user_meet">E-mail</label>
+                </div>
+                <div class="in-t-wrapp fd-c">
+                    <input type="password" id="password_user_meet" placeholder="Введите пароль, для дальнейшей авторизации">
+                    <label for="password_user_meet">Пароль</label>
+                </div>
+                <div class="date_list fd-c m-20">
+                    Дата проведения
+                    <div class="fd-r g-20">
+                        <div class="date_in_item fd-r g-20 fw-w">
+                            <div class="in-t-wrapp fd-c ai-c">
+                                <input type="date" id="date_meet1" value="2023-12-22" min="2023-12-22" max="2024-01-22" required>
+                            </div>
+                        </div>
+                        <div class="date_in_item fd-r g-20 fw-w">
+                            <div class="in-t-wrapp fd-c ai-c">
+                                <input type="date" id="date_meet2" value="2023-12-22" min="2023-12-22" max="2024-01-22" required>
+                            </div>
+                            <button class="btn_close" type="button" title="Удалить">
+                                <svg class="close" width="30" height="30" viewBox="0 0 22 22" >
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0.5C11.5 0.223858 11.2761 0 11 0C10.7239 0 10.5 0.223858 10.5 0.5V10.5H0.5C0.223858 10.5 0 10.7239 0 11C0 11.2761 0.223858 11.5 0.5 11.5H10.5V21.5C10.5 21.7761 10.7239 22 11 22C11.2761 22 11.5 21.7761 11.5 21.5V11.5H21.5C21.7761 11.5 22 11.2761 22 11C22 10.7239 21.7761 10.5 21.5 10.5H11.5V0.5Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="date_in_item fd-r g-20 fw-w">
+                            <div class="in-t-wrapp fd-c ai-c">
+                                <input type="date" id="date_meet3" value="2023-12-22" min="2023-12-22" max="2024-01-22" required>
+                            </div>
+                            <button class="btn_close" type="button" title="Удалить">
+                                <svg class="close" width="30" height="30" viewBox="0 0 22 22" >
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 0.5C11.5 0.223858 11.2761 0 11 0C10.7239 0 10.5 0.223858 10.5 0.5V10.5H0.5C0.223858 10.5 0 10.7239 0 11C0 11.2761 0.223858 11.5 0.5 11.5H10.5V21.5C10.5 21.7761 10.7239 22 11 22C11.2761 22 11.5 21.7761 11.5 21.5V11.5H21.5C21.7761 11.5 22 11.2761 22 11C22 10.7239 21.7761 10.5 21.5 10.5H11.5V0.5Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn_main">Добавить время</button>
+                </div>
+                <div class="fd-r g-20 fw-w m-20">
+                    <div class="in-t-wrapp fd-c ai-c">
+                        <input type="time" id="start_time_meet1" value="09:00" required>
+                        <label for="start_time_meet1">Начало встречи</label>
+                    </div>
+                    <div class="in-t-wrapp fd-c ai-c">
+                        <input type="time" id="end_time_meet1" value="18:00" required>
+                        <label for="end_time_meet1">Окончание встречи</label>
+                    </div>
+                    <div class="in-t-wrapp fd-c ai-c">
+                        <input type="number" id="interval_meet1" value="30" step="5" min="10" max="120" required>
+                        <label for="interval_meet1">Продолжительность (мин.)</label>
+                    </div>
+                </div>
+                <div class="in-c-wrapp fd-r g-20 ai-c">
+                    <input type="checkbox" id="confirm" required>
+                    <label for="confirm">Согласие с политикой конфиденциальности</label>
+                </div>
+                <button type="submit" class="btn btn_main m-20">Создать</button>
+            </form>
+        </section>
+        <section class="section_container fd-c" id="auth">
+            <div class="title_section title_b-b fd-c ai-c">
+                <h1>Войти в личный кабинет</h1>
+            </div>
+            <form action="./html/profile.html" class="fd-c g-20">
+                <div class="in-t-wrapp fd-c">
+                    <input type="email" id="email_auth" placeholder="Введите Ваш e-mail" required>
+                    <label for="email_auth">E-mail</label>
+                </div>
+                <div class="in-t-wrapp fd-c">
+                    <input type="password" id="password_auth" placeholder="Введите Ваш пароль" required>
+                    <label for="password_auth">Пароль</label>
+                </div>
+                <button type="submit" class="btn btn_main">Войти</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer container_hf fd-c ai-c g-20">
+        <div class="logo_wrapp">
+            <a class="logo" href="./index.html">Meetanator</a>
+        </div>
+        <ul class="fd-c g-10">
+            <li><a href="./text/konfidencialnost.txt" download class="link">Политика конфиденцильности</a></li>
+            <li><a href="./text/soglashenie.txt" download class="link">Пользовательское соглашение</a></li>
+        </ul>
+        &copy;Meetanator
+    </footer>
+</body>
+</html>

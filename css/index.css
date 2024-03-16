@@ -1,0 +1,11 @@
+/* 
+    ФАЙЛ ПОДКЛЮЧЕНИЯ СТИЛЕЙ
+    АВТОР - СЕМЕНОВ ДАНИИЛ
+*/
+@import url('./main.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./index_page.css');
+@import url('./meeting_page.css');
+
+@import url('./media.css');
